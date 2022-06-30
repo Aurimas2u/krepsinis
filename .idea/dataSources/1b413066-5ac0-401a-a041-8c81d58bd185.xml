@@ -1217,159 +1217,299 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
       <Engine>InnoDB</Engine>
       <CollationName>latin1_swedish_ci</CollationName>
     </table>
-    <table id="348" parent="332" name="players">
+    <table id="348" parent="326" name="assigned_employees">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <column id="349" parent="344" name="title">
+    <table id="349" parent="326" name="assignments">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <table id="350" parent="326" name="employees">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <table id="351" parent="332" name="matches">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <table id="352" parent="332" name="players">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <column id="353" parent="344" name="title">
       <DataType>text|0s</DataType>
       <Position>1</Position>
     </column>
-    <column id="350" parent="344" name="id">
+    <column id="354" parent="344" name="id">
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <key id="351" parent="344" name="PRIMARY">
+    <key id="355" parent="344" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="352" parent="345" name="id">
+    <column id="356" parent="345" name="id">
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="353" parent="345" name="user_id">
+    <column id="357" parent="345" name="user_id">
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="354" parent="345" name="num">
+    <column id="358" parent="345" name="num">
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="355" parent="345" name="lucky_number">
+    <column id="359" parent="345" name="lucky_number">
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="356" parent="345" name="created_at">
+    <column id="360" parent="345" name="created_at">
       <DataType>datetime|0s</DataType>
       <DefaultExpression>current_timestamp()</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <key id="357" parent="345" name="PRIMARY">
+    <key id="361" parent="345" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="358" parent="346" name="id">
+    <column id="362" parent="346" name="id">
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="359" parent="346" name="user_id">
+    <column id="363" parent="346" name="user_id">
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="360" parent="346" name="text">
+    <column id="364" parent="346" name="text">
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="361" parent="346" name="updated_at">
+    <column id="365" parent="346" name="updated_at">
       <DataType>datetime|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="362" parent="346" name="created_at">
+    <column id="366" parent="346" name="created_at">
       <DataType>int(11)|0s</DataType>
       <Position>5</Position>
     </column>
-    <key id="363" parent="346" name="PRIMARY">
+    <key id="367" parent="346" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="364" parent="347" name="id">
+    <column id="368" parent="347" name="id">
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="365" parent="347" name="name">
+    <column id="369" parent="347" name="name">
       <DataType>varchar(60)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="366" parent="347" name="age">
+    <column id="370" parent="347" name="age">
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="367" parent="347" name="sex">
+    <column id="371" parent="347" name="sex">
       <DataType>enum(&apos;male&apos;, &apos;female&apos;)|0e</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="368" parent="347" name="password">
+    <column id="372" parent="347" name="password">
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="369" parent="347" name="email">
+    <column id="373" parent="347" name="email">
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <column id="370" parent="347" name="created_at">
+    <column id="374" parent="347" name="created_at">
       <DataType>timestamp|0s</DataType>
       <DefaultExpression>current_timestamp()</DefaultExpression>
       <NotNull>1</NotNull>
       <OnUpdate>current_timestamp()</OnUpdate>
       <Position>7</Position>
     </column>
-    <column id="371" parent="347" name="updated_at">
+    <column id="375" parent="347" name="updated_at">
       <DataType>datetime|0s</DataType>
       <OnUpdate>current_timestamp()</OnUpdate>
       <Position>8</Position>
     </column>
-    <index id="372" parent="347" name="email">
+    <index id="376" parent="347" name="email">
       <ColNames>email</ColNames>
       <Type>hash</Type>
       <Unique>1</Unique>
     </index>
-    <key id="373" parent="347" name="PRIMARY">
+    <key id="377" parent="347" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <key id="374" parent="347" name="email">
+    <key id="378" parent="347" name="email">
       <ColNames>email</ColNames>
       <UnderlyingIndexName>email</UnderlyingIndexName>
     </key>
-    <column id="375" parent="348" name="id">
+    <column id="379" parent="348" name="id">
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="376" parent="348" name="name">
+    <column id="380" parent="348" name="assignment_id">
+      <DataType>int(11)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="381" parent="348" name="employee_id">
+      <DataType>int(11)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="382" parent="348" name="assignment_start">
+      <DataType>datetime|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="383" parent="348" name="assignment_finish">
+      <DataType>datetime|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <key id="384" parent="348" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+    </key>
+    <column id="385" parent="349" name="id">
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="386" parent="349" name="title">
       <DataType>text|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="377" parent="348" name="about">
+    <column id="387" parent="349" name="created_at">
+      <DataType>timestamp|0s</DataType>
+      <DefaultExpression>current_timestamp()</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="388" parent="349" name="completed_at">
+      <DataType>datetime|0s</DataType>
+      <DefaultExpression>current_timestamp()</DefaultExpression>
+      <OnUpdate>current_timestamp()</OnUpdate>
+      <Position>4</Position>
+    </column>
+    <key id="389" parent="349" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+    </key>
+    <column id="390" parent="350" name="id">
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="391" parent="350" name="name">
+      <DataType>varchar(100)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="392" parent="350" name="last_name">
+      <DataType>varchar(100)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="393" parent="350" name="is_multitasker">
+      <DataType>tinyint(4)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <key id="394" parent="350" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+    </key>
+    <column id="395" parent="351" name="id">
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="396" parent="351" name="player1_name">
+      <DataType>text|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="397" parent="351" name="player2_name">
       <DataType>text|0s</DataType>
       <Position>3</Position>
     </column>
-    <key id="378" parent="348" name="PRIMARY">
+    <column id="398" parent="351" name="player1_score">
+      <DataType>int(11)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="399" parent="351" name="player2_score">
+      <DataType>int(11)|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="400" parent="351" name="winner_name">
+      <DataType>text|0s</DataType>
+      <Position>6</Position>
+    </column>
+    <column id="401" parent="351" name="date_played">
+      <DataType>date|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <column id="402" parent="351" name="created_at">
+      <DataType>timestamp|0s</DataType>
+      <DefaultExpression>current_timestamp()</DefaultExpression>
+      <Position>8</Position>
+    </column>
+    <key id="403" parent="351" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+    </key>
+    <column id="404" parent="352" name="id">
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="405" parent="352" name="name">
+      <DataType>text|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="406" parent="352" name="wins">
+      <DataType>int(11)|0s</DataType>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="407" parent="352" name="loses">
+      <DataType>int(11)|0s</DataType>
+      <DefaultExpression>0</DefaultExpression>
+      <Position>4</Position>
+    </column>
+    <key id="408" parent="352" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>

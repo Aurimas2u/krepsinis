@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66c51fae-60ec-4cd6-99e0-22c237ca455f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/create_database.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/create_tables.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/export.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/game_history.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1b413066-5ac0-401a-a041-8c81d58bd185.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1b413066-5ac0-401a-a041-8c81d58bd185.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/archive.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/assignments.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/standings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/new_assignment.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/new_employee.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/standings.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/standings.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +34,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CodeacademyProject/CodeacademyProject" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -47,7 +46,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1656607913593</updated>
-      <workItem from="1656607915163" duration="1165000" />
+      <workItem from="1656607915163" duration="15398000" />
     </task>
     <servers />
   </component>
