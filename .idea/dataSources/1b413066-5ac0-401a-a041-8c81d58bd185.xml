@@ -1509,7 +1509,19 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
       <DefaultExpression>0</DefaultExpression>
       <Position>4</Position>
     </column>
-    <key id="408" parent="352" name="PRIMARY">
+    <column id="408" parent="352" name="password">
+      <DataType>varchar(100)|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <column id="409" parent="352" name="username">
+      <DataType>varchar(100)|0s</DataType>
+      <Position>6</Position>
+    </column>
+    <column id="410" parent="352" name="hidden">
+      <DataType>tinyint(1)|0s</DataType>
+      <Position>7</Position>
+    </column>
+    <key id="411" parent="352" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>

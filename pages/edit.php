@@ -2,6 +2,8 @@
 
 <form method="post">
     <input name="name" placeholder="Vardas pavardė"><br>
+    <input name="username" placeholder="Username"><br>
+    <input name="password" placeholder="password"><br>
     <button type="submit">Create</button>
 </form>
 <?php
@@ -12,8 +14,9 @@ $players = mysqli_fetch_all(mysqli_query($database, 'select name from players'),
                 $error = 'Zaidejas tokiu vardu jau uzregistruotas';
             }
         }
+        //parasyti error password ir usernamui
         if(!isset($error)) {
-            mysqli_query($database, 'insert into players (name) value ("' . $_POST['name'] . '")');
+            mysqli_query($database, 'insert into players (name, username, password) values ("' . $_POST['name'] . '", "' . $_POST['username'] . '", "' . md5($_POST['password']) . '")');
             echo "Žaidėjas pridėtas";
         } else {
             echo $error;
@@ -21,6 +24,7 @@ $players = mysqli_fetch_all(mysqli_query($database, 'select name from players'),
 }
 ?>
 </br>
+<!--               ------------     --------     ADD A MATCH       ------------           -->
 <b>Pridėti match'a</b>
 
 <form method="post" action="index.php?page=edit&create=new">
@@ -39,9 +43,7 @@ $players = mysqli_fetch_all(mysqli_query($database, 'select name from players'),
     <input type="date" name="date_played"><br>
     <button type="submit">Create</button>
 </form>
-
 <?php
-
 if (isset($_GET['create'])){
     $player1 = $_POST['player1_name'] ?? null;
     $player2 = $_POST['player2_name'] ?? null;
