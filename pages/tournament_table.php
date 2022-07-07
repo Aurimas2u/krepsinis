@@ -1,4 +1,5 @@
 <!--for winner add class to tr tournament-bracket__team--winner-->
+<section>
 <div class="container">
     <div class="tournament-bracket tournament-bracket--rounded">
         <div class="tournament-bracket__round tournament-bracket__round--quarterfinals">
@@ -309,3 +310,4 @@
         </div>
     </div>
 </div>
+</section>

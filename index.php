@@ -10,50 +10,64 @@ include_once 'functions.php';
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet/less" type="text/css" href="styles.less" />
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <style>
-    body {
-        width: 760px;
-        margin: 0 auto;
-    }
-
-    div {
-        width: fit-content;
-        margin: 0 auto;
-    }
     .cena {
         width: 75px;
         height: 50px;
     }
-    .forNavbar{
-        justify-content: center;
-    }
 </style>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="collapse navbar-collapse forNavbar" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <?php if(isLogged()){ ?>
-            <li class="nav-item">
-                <a class="nav-link" href="?page=standings">Standings</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="?page=game_history">Game History</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="?page=tournament_table">Tournament Table</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="?page=logout">Logout</a>
-            </li>
-                <?php if($_SESSION['name'] === 'aras'){ ?>
-            <li class="nav-item">
-                <a class="nav-link" href="?page=edit">Edit</a>
-            </li>
-            <?php }} ?>
-        </ul>
-    </div>
-</nav>
+<div class="navigation">
+    <nav class="navbar navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <button
+                    class="navbar-toggler fas fa-bars m-5"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+                    class="offcanvas offcanvas-end"
+                    tabindex="-1"
+                    id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel"
+            >
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        Kašis vasara
+                    </h5>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <?php if(isLogged()){ ?>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="?page=standings">Standings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="?page=game_history">Game History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="?page=tournament_table">Tournament Table</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="?page=logout">Logout</a>
+                        </li>
+                        <?php if($_SESSION['name'] === 'aras'){ ?>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="?page=edit">Edit</a>
+                            </li>
+                        <?php }} ?>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
 <?php
 if ($page === null) {
     include 'pages/login.php';
